@@ -3,8 +3,8 @@ using System;
 
 
 {
-Console.WriteLine("Ask a question and your fortune will be revealed");
-Console.WriteLine("------------------------------------------------");
+    Console.WriteLine("Ask a question and your fortune will be revealed");
+    Console.WriteLine("------------------------------------------------");
 };
 
 
@@ -33,12 +33,13 @@ List<string> response = new List<string>()
 };
 
 
-while (true) {
-Random NUM = new Random();
-int newNum = NUM.Next(0, 21);
-string userInput = Console.ReadLine();
-// Console.WriteLine($"Random Number = {NUM.Next(0,21)}");
-Console.WriteLine($"Your answer: {response[newNum]}");
+while (true)
+{
+    Random NUM = new Random();
+    int newNum = NUM.Next(0, 21);
+    string userInput = Console.ReadLine();
+    // Console.WriteLine($"Random Number = {NUM.Next(0,21)}");
+    Console.WriteLine($"Your answer: {response[newNum]}");
 }
 
 
